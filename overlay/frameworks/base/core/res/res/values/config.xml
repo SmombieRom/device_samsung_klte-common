@@ -22,7 +22,7 @@
 <resources>
      
      <!-- HW keys prefs-->
-     <bool name="config_hwKeysPref">true</bool>  
+     <bool name="config_useSystemClockforSensors">true</bool> 
 
     <bool name="config_deskDockEnablesAccelerometer">false</bool>
 
