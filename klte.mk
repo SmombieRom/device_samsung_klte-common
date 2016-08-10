@@ -17,7 +17,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/klte-common/klte-common-vendor.mk)
+$(call inherit-product, vendor/samsung/klte-common/klte-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -110,7 +110,8 @@ PRODUCT_PACKAGES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    libril_shim
+    libril_shim \
+    libprotobuf-cpp-full
 
 # Ramdisk
 PRODUCT_PACKAGES += \
